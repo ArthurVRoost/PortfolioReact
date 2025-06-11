@@ -1,7 +1,7 @@
 import './home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-import { faHtml5,faReact, faSquareJs,faCss, faSass, faBootstrap } from '@fortawesome/free-brands-svg-icons';
+import { faArrowUpRightFromSquare, faPaperPlane, faPhone } from '@fortawesome/free-solid-svg-icons';
+import { faHtml5,faReact, faSquareJs,faCss, faSass, faBootstrap, faFacebook, faSquareInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import PPSECTION1 from '/src/assets/img/PP.jpg'
 import ESHOPYY from '/src/assets/img/ESHOPPY.png'
 import ESPACE from '/src/assets/img/ESPACE.png'
@@ -153,6 +153,33 @@ export default function Home() {
                     </div>
                 </div>
                 <Link className='link' to="/allProjects"><button className='btn'>See More</button></Link>
+            </div>
+        </section>
+        {/* SECTION 4 */}
+        <section id='contact'>
+            <div className="container">
+                <div className="row">
+                    <div className="contact-left">
+                        <h1 className='subtitle'>Contact Me</h1>
+                        <p><FontAwesomeIcon className='iContact1' icon={faPaperPlane} />arthur.vanroost@icloud.com</p>
+                        <p><FontAwesomeIcon className='iContact1' icon={faPhone} />+32 499 73 63 24</p>
+                        <div className="social-icons">
+                            <a href="https://www.facebook.com/arthur.vanroost/"><FontAwesomeIcon className='iContact' icon={faFacebook} /></a>
+                            <a href="https://www.instagram.com/a.vroost/"><FontAwesomeIcon className='iContact' icon={faSquareInstagram} /></a>
+                            <a href="https://www.linkedin.com/in/arthur-van-roost-79a9a8180/"><FontAwesomeIcon className='iContact' icon={faLinkedinIn} /></a>
+                            <a href="https://github.com/ArthurVRoost"><FontAwesomeIcon className='iContact' icon={faGithub} /></a>
+                        </div>
+                        <a href="LIEN VERS MON CV" className="btn btn2">Download CV</a>
+                    </div>
+                    <div className="contact-right">
+                        <form>
+                            <input type="text" name='Name' placeholder='Your Name' required />
+                            <input type="email" name='email' placeholder='Your Email' required />
+                            <textarea name="Message" rows="6" placeholder='Your Message' ></textarea>
+                            <button type='submit' className='btn '>Submit</button>
+                        </form>
+                    </div>
+                </div>
             </div>
         </section>
         </>
