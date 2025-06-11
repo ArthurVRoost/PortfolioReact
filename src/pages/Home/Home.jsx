@@ -1,8 +1,16 @@
 import './home.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {  } from '@fortawesome/free-solid-svg-icons';
+import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
 import { faHtml5,faReact, faSquareJs,faCss, faSass, faBootstrap } from '@fortawesome/free-brands-svg-icons';
 import PPSECTION1 from '/src/assets/img/PP.jpg'
+import ESHOPYY from '/src/assets/img/ESHOPPY.png'
+import ESPACE from '/src/assets/img/ESPACE.png'
+import MULTIFORM from '/src/assets/img/MULTIFORM.png'
+import RPS from '/src/assets/img/PIERREPAPIER.png'
+import NFT from '/src/assets/img/NFTCARD.png'
+import TRACKER from '/src/assets/img/REACTTRACKER.png'
+import { Link } from 'react-router-dom';
+
 export default function Home() {
     return(
         <>
@@ -85,6 +93,66 @@ export default function Home() {
                         <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">Learn More</a>
                     </div>
                 </div>
+            </div>
+        </section>
+        {/* SECTION 3 */}
+        <section id='portfolio'>
+            <div className="container">
+                <h1 className='subtitle titreWork'>My Work</h1>
+                <div className="work-list slide-left">
+                    <div className='work'>
+                        <img src={ESHOPYY} alt="" />
+                        <div className='layer'>
+                            <h3>ESHOPYY</h3>
+                            <p>EShoppy is a basic website to train the fact that you push things in for example a card in React. </p>
+                            <a href="https://arthurvroost.github.io/E-Shoppy/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                        </div>
+                    </div>
+                    <div className='work'>
+                        <img src={ESPACE} alt="" />
+                        <div className="layer">
+                            <h3>ESPACE</h3>
+                            <p>Espace is a site where you can find members of a NASA crew and possible destinies. </p>
+                            <a href="https://arthurvroost.github.io/ProjetEspace/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                        </div>
+                    </div>
+                    <div className='work'>
+                        <img src={MULTIFORM} alt="" />
+                        <div className="layer">
+                            <h3>MULTIFORM</h3>
+                            <p>Mutliform is as it sais a multiform than concludes in what type of subscription you want. </p>
+                            <a href="https://arthurvroost.github.io/ProjetState/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div className="work-list slide-right">
+                    <div className='work'>
+                        <img src={RPS} alt="" />
+                        <div className="layer">
+                            <h3>ROCK&PAPER&SCISSOR</h3>
+                            <p>RPS is the classic game that you play vs the computer.  </p>
+                            <a href="https://arthurvroost.github.io/Rock-Paper-Scissors/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                        </div>
+                    </div>
+                    <div className='work'>
+                        <img src={NFT} alt="" />
+                        <div className="layer">
+                            <h3>EQUILIBRIUM</h3>
+                            <p>Equilibrium is a card with some data about a random guy and his posessings in crypto </p>
+                            <a href="https://arthurvroost.github.io/ExoCard2/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                        </div>
+                    </div>
+                    <div className='work'>
+                        <img src={TRACKER} alt="" />
+                        <div className="layer">
+                            <h3>REACT-TIME-TRACKING</h3>
+                            <p>React-Time-Tracking is a dashboard thats tracks daily-weekly and -monthly stats about certain activities somebody did through a .json </p>
+                            <a href="https://arthurvroost.github.io/React-Time-Tracking/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
+                        </div>
+                    </div>
+                </div>
+                <Link className='link' to="/allProjects"><button className='btn'>See More</button></Link>
             </div>
         </section>
         </>
