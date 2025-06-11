@@ -1,0 +1,13 @@
+footer{
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid grey;
+    width: 80vw;
+    margin-left: 10vw;
+}
+footer p{
+    margin: 3%;
+}
+footer p span{
+    color: #ff004f;
+}
