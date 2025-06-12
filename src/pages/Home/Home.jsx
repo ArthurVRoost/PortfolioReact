@@ -101,7 +101,7 @@ export default function Home() {
                 <h1 className='subtitle titreWork'>My Work</h1>
                 <div className="work-list slide-left">
                     <div className='work'>
-                        <img src={ESHOPYY} alt="" />
+                        <img className='imgSkills' src={ESHOPYY} alt="" />
                         <div className='layer'>
                             <h3>ESHOPYY</h3>
                             <p>EShoppy is a basic website to train the fact that you push things in for example a card in React. </p>
@@ -109,7 +109,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='work'>
-                        <img src={ESPACE} alt="" />
+                        <img className='imgSkills' src={ESPACE} alt="" />
                         <div className="layer">
                             <h3>ESPACE</h3>
                             <p>Espace is a site where you can find members of a NASA crew and possible destinies. </p>
@@ -117,7 +117,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='work'>
-                        <img src={MULTIFORM} alt="" />
+                        <img className='imgSkills' src={MULTIFORM} alt="" />
                         <div className="layer">
                             <h3>MULTIFORM</h3>
                             <p>Mutliform is as it sais a multiform than concludes in what type of subscription you want. </p>
@@ -128,7 +128,7 @@ export default function Home() {
 
                 <div className="work-list slide-right">
                     <div className='work'>
-                        <img src={RPS} alt="" />
+                        <img className='imgSkills' src={RPS} alt="" />
                         <div className="layer">
                             <h3>ROCK&PAPER&SCISSOR</h3>
                             <p>RPS is the classic game that you play vs the computer.  </p>
@@ -136,7 +136,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='work'>
-                        <img src={NFT} alt="" />
+                        <img className='imgSkills' src={NFT} alt="" />
                         <div className="layer">
                             <h3>EQUILIBRIUM</h3>
                             <p>Equilibrium is a card with some data about a random guy and his posessings in crypto </p>
@@ -144,7 +144,7 @@ export default function Home() {
                         </div>
                     </div>
                     <div className='work'>
-                        <img src={TRACKER} alt="" />
+                        <img className='imgSkills' src={TRACKER} alt="" />
                         <div className="layer">
                             <h3>REACT-TIME-TRACKING</h3>
                             <p>React-Time-Tracking is a dashboard thats tracks daily-weekly and -monthly stats about certain activities somebody did through a .json </p>

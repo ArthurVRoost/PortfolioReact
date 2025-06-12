@@ -141,6 +141,7 @@
     transition: transform 0.5s;
     object-fit: contain;
 }
+
 .layer{
     width: 100%;
     height: 0;
