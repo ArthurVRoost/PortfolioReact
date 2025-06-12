@@ -14,6 +14,8 @@ import TODO from '/src/assets/img/TODO.png'
 import YC from '/src/assets/img/Youcommunik.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom'
+
 export default function AllProjects() {
     return(
         <>
@@ -125,6 +127,10 @@ export default function AllProjects() {
                             <a href="https://arthurvroost.github.io/Livre-de-recette/"><FontAwesomeIcon icon={faArrowUpRightFromSquare} /></a>
                         </div>
                     </div>
+                </div>
+                <div className="btnPage1">
+                    <Link className='link' to="/"><button className='btn'>Go Back</button></Link>
+                    <Link className='link' to="https://github.com/ArthurVRoost"><button className='btn'>Github Profile</button></Link>
                 </div>
             </div>
         </section>
